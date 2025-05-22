@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Nanda</title>
+    <style>
+        /* Pastikan body menggunakan flexbox untuk pusatkan kartu profil */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Pastikan kartu tetap di tengah */
+            font-family: Arial, sans-serif;
+            background-image: url(BANNER\ WEB.jpg); /* Ganti dengan gambar latar yang sesuai */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            margin: 0; /* Hilangkan margin default */
+        }
+
+        /* Kartu profil lebih besar */
+        .profile-card {
+            display: flex;
+            align-items: center;
+            background-color: #a92828;
+            border: 3px solid black;
+            padding: 30px; /* Tambahkan padding lebih besar */
+            border-radius: 15px;
+            width: 80%; /* Lebih besar */
+            max-width: 800px; /* Batasi ukuran maksimal */
+            box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4); /* Tambahkan bayangan */
+        }
+
+        /* Foto profil lebih besar */
+        .profile-photo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 30px;
+        }
+
+        .profile-photo {
+            width: 200px; /* Lebih besar */
+            height: 200px; /* Lebih besar */
+            border-radius: 50%;
+            background-color: #d3d3d3;
+            border: 3px solid black;
+        }
+
+        /* Tombol Instagram dengan logo */
+        .instagram-button {
+            display: inline-block;
+            margin-top: 15px;
+            width: 50px; /* Ukuran ikon */
+            height: 50px;
+        }
+
+        .instagram-button img {
+            width: 100%;
+            height: 100%;
+            transition: 0.3s;
+        }
+
+        .instagram-button img:hover {
+            transform: scale(1.1); /* Efek zoom saat hover */
+        }
+
+        /* Informasi profil */
+        .profile-info {
+            flex-grow: 1;
+        }
+
+        .profile-info h1 {
+            font-size: 32px; /* Lebih besar */
+            margin-bottom: 15px;
+        }
+
+        .profile-info p {
+            font-size: 18px; /* Perbesar teks */
+            margin: 8px 0;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 20px; /* Perbesar kutipan */
+        }
+
+        .education, .universities {
+            font-weight: bold;
+            font-size: 20px; /* Perbesar teks pendidikan */
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <!-- Foto profil dan tombol Instagram -->
+        <div class="profile-photo-container">
+            <div class="profile-photo"></div>
+            <a href="https://www.instagram.com/m.nannda_/?hl=en" target="_blank" class="instagram-button">
+                <img src="Logo insta.png" alt="Instagram Logo">
+            </a>
+        </div>
+
+        <!-- Informasi profil -->
+        <div class="profile-info">
+            <h1>M. Dian Bagus Ananda</h1>
+            <p class="quote">"semua orang di dewasakan oleh kejadian kejadian bodoh, jadi jangan merasa menjadi orang paling sial di dunia"</p>
+            <p class="education">Aray Boyz</p>
+            <p>SMPIT Fitrah Hanniah</p>
+            <p>&darr;</p>
+            <p>SMK Mitra Industri</p>
+            
+            <b style="font-size: 22px;">About me</b>
+            <p>
+                halo ges!!! mama saya mohammad dian bagus ananda biasa di panggil nanda, saya lahir di bekasi 2 November 2009 umur saya sekarang 15 dan tahun ini 16. kalo ada yang nanya hobi saya apa, jawabannya adalah saya suka bermain sepak bola dan bermain futsal. terus kalo ada yang nanya lagi idolanya siapa?, jelas dong, (the goat) cristiano Ronaldo
+            </p>
+        </div>
+    </div>
+</body>
+</html>
